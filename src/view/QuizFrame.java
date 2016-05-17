@@ -22,22 +22,17 @@ public class QuizFrame extends JFrame {
     private JButton scoreAssessmentButton;
     private JButton cancelInductionButton;
 
-    //    private MultipleChoiceQuestion questionnaire;
-    //private JRadioButton btn1,btn2,btn3,btn4;
     private ArrayList<JRadioButton> btnArray;
-    //    private DataModel dataModel;
+
     private Questionnaire questionnaire;
     private ArrayList<QuestionPanel> questionPanels;
-//    private UserInputFrame parentFrame;
+
 
     public QuizFrame(String title) throws HeadlessException {
         super(title);
-        // Reference to the datamodel
-//        dataModel = InductionSWController.getInstance().getDataModel();
         btnArray = new ArrayList<>();
         questionPanels = new ArrayList<>();
         questionnaire = InductionSWController.getInstance().getQuestionnaire();
-//        this.parentFrame = parentFrame;
 
         // Content of our JFrame
         JPanel mainPanel = new JPanel();
@@ -128,20 +123,6 @@ public class QuizFrame extends JFrame {
             // ------------------SCORE ASSESSMENT BUTTON------------------
 
             if (sourceButton.equals(scoreAssessmentButton)) {
-//                for (int i = 0; i< InductionSWController.getInstance().getQuestionnaire().getQuestions().size(); i++) {
-////                    MultipleChoiceQuestion quest = InductionSWController.getInstance().getQuestionnaire().getQuestions().get(i);
-//
-//                    //output to the console
-//
-////                    System.out.println( "+++++++++++" + InductionSWController.getInstance().getQuestionnaire().getAnswers()[i] + "+++++++++++");
-//
-//
-//                    // Collect the answer
-//
-//                }
-//                for (int i = 0 ; i < InductionSWController.getInstance().getQuestionnaire().getQuestions().size(); i++) {
-//                    System.out.println(InductionSWController.getInstance().getCurrentInductee().getQuizAnswers()[i]);
-//                }
                 if (validateQuestionnaire()) {
 
                     int quizScore = InductionSWController.getInstance().calculateQuizScore
@@ -172,7 +153,6 @@ public class QuizFrame extends JFrame {
                         JLabel wrongLabel = new JLabel("Please pay attention to the questions that you answered incorrectly.");
                         panel.add(new JLabel("Congratulations! You have passed your induction."));
                         panel.add(scoreLabel);
-//                        panel.add(new JLabel("Please pay attention to the questions that you answered incorrectly."));
                         if (quizScore < quizSize)
                             panel.add(wrongLabel);
                         else
@@ -296,9 +276,6 @@ public class QuizFrame extends JFrame {
                         frame.setLocationRelativeTo(null);
                         frame.setVisible(true);
 
-                        // Enable the userinput frame and hide this one
-//                outerClass.setVisible(false);
-//                parentFrame.setVisible(true);
                     }
                 } else { // ELSE QUESTIONNAIRE NOT VALIDATED
                     JOptionPane.showMessageDialog(null, "You need to answer all questions", "Error", JOptionPane.ERROR_MESSAGE);

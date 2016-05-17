@@ -5,7 +5,6 @@ import controller.InductionSWController;
 import controller.interfaces.IPersistor;
 import model.DataModel;
 
-
 import javax.swing.*;
 
 /**

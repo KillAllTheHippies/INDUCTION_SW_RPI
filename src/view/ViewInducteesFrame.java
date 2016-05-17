@@ -1,19 +1,18 @@
 package view;
 
+import controller.InductionSWController;
+import controller.interfaces.IGui;
+import model.Inductee;
+
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-import javax.swing.*;
 
-import controller.InductionSWController;
-import controller.interfaces.IGui;
-import model.Inductee;
-
-
-public class DisplayInducteesFrame extends JFrame implements IGui
+public class ViewInducteesFrame extends JFrame implements IGui
 {
     //The "scope" of this variable is the entire
     //class. So other methods and inner classes can see it.
@@ -26,7 +25,7 @@ public class DisplayInducteesFrame extends JFrame implements IGui
     private JTable inducteesTable;
     private InducteesTableModel tableModel;
 
-    public DisplayInducteesFrame(String title)
+    public ViewInducteesFrame(String title)
     {
         super(title);
         //This is what we are going to use as the
@@ -91,7 +90,7 @@ public class DisplayInducteesFrame extends JFrame implements IGui
 //            public void actionPerformed(ActionEvent e)
 //            {
 //                InductionSWController.getInstance().save();
-//                JOptionPane.showMessageDialog(DisplayInducteesFrame.this, "Inductees saved");
+//                JOptionPane.showMessageDialog(ViewInducteesFrame.this, "Inductees saved");
 //            }
 //        });
         okButton.addActionListener(new ActionListener(){
@@ -155,17 +154,17 @@ public class DisplayInducteesFrame extends JFrame implements IGui
         lbl.setIcon(icon);
         frame.add(lbl);
         frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
     //Inner class implementation of ActionListener
     private class ButtonsActionListener implements ActionListener
     {
         //This is to allow this inner class to refer to its
-        //containing class (i.e. DisplayInducteesFrame)
-        private DisplayInducteesFrame outerClass;
+        //containing class (i.e. ViewInducteesFrame)
+        private ViewInducteesFrame outerClass;
 
-        public ButtonsActionListener(DisplayInducteesFrame outerClass)
+        public ButtonsActionListener(ViewInducteesFrame outerClass)
         {
             this.outerClass = outerClass;
         }

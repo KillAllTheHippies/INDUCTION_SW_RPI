@@ -4,8 +4,7 @@ import controller.interfaces.IPersistor;
 import model.DataModel;
 import model.Inductee;
 
-
-import java.sql.*;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class DatabasePersistor implements IPersistor {

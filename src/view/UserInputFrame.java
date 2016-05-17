@@ -1,16 +1,13 @@
 package view;
 
 import controller.InductionSWController;
-import model.Inductee;
 import net.miginfocom.swing.MigLayout;
-
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 
 /**
  * Created by Jamie on 29/02/16.
@@ -59,24 +56,12 @@ public class UserInputFrame extends JFrame {
 
         // add to the layout
         this.getContentPane().add(mainPanel);
-
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        //TODO: revert this back to DISPOSE_ON_CLOSE
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        this.setUndecorated(true);
 
     }
 
-    //Show image on frame
-    public void showImage(BufferedImage img, String text) {
-        ImageIcon icon=new ImageIcon(img);
-        JFrame frame=new JFrame(text);
-        frame.setLayout(new FlowLayout());
-        frame.setSize(img.getWidth(), img.getHeight() + 30);
-        JLabel lbl=new JLabel();
-        lbl.setIcon(icon);
-        frame.add(lbl);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
 
     private JPanel createCenterPanel() {
 
@@ -282,7 +267,7 @@ public class UserInputFrame extends JFrame {
 //            }
             // ------------------DISPLAY INDUCTEES BUTTON------------------
             else {
-                DisplayInducteesFrame dif = new DisplayInducteesFrame("View Inductees");
+                ViewInducteesFrame dif = new ViewInducteesFrame("View Inductees");
                 dif.setSize(800, 300);
 
                 dif.setVisible(true);

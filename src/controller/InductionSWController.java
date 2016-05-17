@@ -1,8 +1,6 @@
 package controller;
 
 
-
-
 import controller.interfaces.IGui;
 import controller.interfaces.IPersistor;
 import model.DataModel;
@@ -12,10 +10,9 @@ import model.Questionnaire;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.util.ArrayList;
 
-import java.io.File;
-//import view.JPanelOpenCV;
 
 public class InductionSWController
 {
@@ -48,8 +45,6 @@ public class InductionSWController
     public static final int QUIZ_PASS_PERCENTAGE = 70;
 //    public static final String QUESTIONNAIRE_LOCATION = "C:\\InductionApp\\Questionnaire.txt";
     public static final String QUESTIONNAIRE_LOCATION = "Questionnaire.txt";
-//    public static final String VLC_LIB_LOCATION = "C:\\InductionApp\\lib";
-    public static final String VLC_LIB_LOCATION = "lib";
     public static final String DATAMODEL_FILE_LOCATION = "DataModel.dat";
 //    public static final String DATAMODEL_FILE_LOCATION = "C:\\InductionApp\\DataModel.dat";
     public static final String VIDEO_FILE_LOCATION = "InductionVideo.mp4";
@@ -89,10 +84,6 @@ public class InductionSWController
 
     public Questionnaire getQuestionnaire(){ return this.questionnaire;}
 
-//    public void setQuestionnaire(Questionnaire questionnaire) {
-//        this.questionnaire = questionnaire;
-//    }
-
 
     public void setGuiReference(IGui gui)
     {
@@ -115,24 +106,12 @@ public class InductionSWController
     }
 
     public Inductee createInductee( String name, String company, String jobTitle, String supervisor, String carReg, String competencies, long dateOfInduction) {
+
         Inductee i = new Inductee( name, company, jobTitle, supervisor, carReg, competencies, dateOfInduction);
-
-//        // Capture the picture and add it to the inductee
-//        try {
-//            i.setPhoto(takePicture());
-//            System.out.println("picture taken, createInductee");
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-
-        // Add the inductee to the datamodel
-        // TODO: This will be deleted and current inductee will be added
-//        this.dataModel.addInductee(i);
 
         // Set the current inductee
         this.currentInductee = i;
 
-//        this.newlyAddedInductees.add(i);
         return i;
     }
 
@@ -153,20 +132,11 @@ public class InductionSWController
 
     public BufferedImage takePicture() throws InterruptedException {
 
-        //TODO: Run the command that takes a picture on RPI
+
         Process p;
         try {
 
             p = Runtime.getRuntime().exec(new String[]{"bash", "-c","raspistill -e png -o new.png -w 800 -h 600"});
-
-//            MyInputStreamReader reader1 = new MyInputStreamReader(p.getInputStream());
-//            reader1.setTag("in");
-//            reader1.start();
-//
-//            MyInputStreamReader reader2 = new MyInputStreamReader(p.getErrorStream());
-//            reader2.setTag("in");
-//            reader2.start();
-
 
             p.waitFor();
             System.out.println ("exit: " + p.exitValue());
@@ -188,7 +158,7 @@ public class InductionSWController
 
             return img;
         } catch (Exception e) {
-            System.out.println("erro");
+            System.out.println("error reading image");
         }
 
         return null;
@@ -200,8 +170,7 @@ public class InductionSWController
     {
         this.persistor.write(this.dataModel);
         System.out.println("save method of controller called");
-//        this.persistor.writeInductee(this.newlyAddedInductees);
-//        this.newlyAddedInductees.clear();
+
     }
 
 
@@ -211,10 +180,7 @@ public class InductionSWController
     }
 
     public boolean isQuizPassed(int percentageCorrect) {
-        if (percentageCorrect < QUIZ_PASS_PERCENTAGE)
-            return false;
-        else
-            return true;
+        return percentageCorrect >= QUIZ_PASS_PERCENTAGE;
 
     }
 
@@ -246,13 +212,8 @@ public class InductionSWController
     public void launchVideo() {
         //TODO: Launch omxplayer
         VideoPlayer vp = new VideoPlayer();
-//        controller.VideoPlayer.main(null);
+
     }
 
 
-//    public void saveDataModel()
-//    {
-//        FilePersistor fps = new FilePersistor();
-//        fps.write(this.dataModel);
-//    }
 }

@@ -23,13 +23,13 @@ public class VideoPlayer {
             System.out.println("run command " + command);
             p = Runtime.getRuntime().exec(new String[]{"bash", "-c",command});
 
-            MyInputStreamReader reader1 = new MyInputStreamReader(p.getInputStream());
-            reader1.setTag("in");
-            reader1.start();
-
-            MyInputStreamReader reader2 = new MyInputStreamReader(p.getErrorStream());
-            reader2.setTag("in");
-            reader2.start();
+//            MyInputStreamReader reader1 = new MyInputStreamReader(p.getInputStream());
+//            reader1.setTag("in");
+//            reader1.start();
+//
+//            MyInputStreamReader reader2 = new MyInputStreamReader(p.getErrorStream());
+//            reader2.setTag("in");
+//            reader2.start();
 
 
             p.waitFor();

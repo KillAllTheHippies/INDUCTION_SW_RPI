@@ -7,19 +7,16 @@ import java.io.InputStream;
  * Created by Jamie on 17/05/16.
  */
 class MyInputStreamReader extends Thread{
-    boolean isStop = false;
-    ReadEventHandler handler;
-    String tag;
-    InputStream in;
-    public MyInputStreamReader(InputStream in)
+    private ReadEventHandler handler;
+    private String tag;
+    private InputStream in;
+    MyInputStreamReader(InputStream in)
     {
         this.in = in;
     }
 
-    public void setHandler(ReadEventHandler handler) {
-        this.handler = handler;
-    }
-    public void setTag(String tag)
+
+    void setTag(String tag)
     {
         this.tag = tag;
     }
@@ -50,7 +47,7 @@ class MyInputStreamReader extends Thread{
     }
     public void dispose()
     {
-        this.isStop = true;
+        boolean isStop = true;
     }
     public interface ReadEventHandler
     {
