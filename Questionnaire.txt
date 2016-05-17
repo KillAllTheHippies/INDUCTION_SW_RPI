@@ -1,0 +1,4 @@
+This is a question.=True answer 1=False answer 2=False answer 3=False answer 4
+This is a question....=True answer 1=False answer 2=False answer 3=False answer 4
+This is a question...=True answer 1=False answer 2=False answer 3=False answer 4
+This is a question......=True answer 1=False answer 2=False answer 3=False answer 4
