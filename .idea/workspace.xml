@@ -7,50 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f43920-93a3-445a-945d-725c9589bd9c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/BackEndFrame$ButtonsActionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/BackEndFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/DisplayInducteesFrame$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/DisplayInducteesFrame$ButtonsActionListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/DisplayInducteesFrame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/view/BackEndFrame.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/view/DisplayInducteesFrame.java" afterPath="$PROJECT_DIR$/src/view/ViewInducteesFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/INDUCTION_SW_RPI_jar/INDUCTION_SW_RPI.jar" afterPath="$PROJECT_DIR$/out/artifacts/INDUCTION_SW_RPI_jar/INDUCTION_SW_RPI.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/DatabasePersistor.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/DatabasePersistor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/InductionSWController.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/InductionSWController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/MyInputStreamReader.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/MyInputStreamReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/VideoPlayer.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/controller/VideoPlayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/model/Questionnaire.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/model/Questionnaire.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/ImagePanel.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/ImagePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainApplication.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainDashBoardFrame$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainDashBoardFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainDashBoardFrame.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/MainDashBoardFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuestionPanel$RadioButtonsActionListener.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuestionPanel$RadioButtonsActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuestionPanel.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuestionPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$1$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$2.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$3$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$3.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$4.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame$ButtonsActionListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/QuizFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$ButtonsActionListener$1.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$ButtonsActionListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$ButtonsActionListener.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame$ButtonsActionListener.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controller/MyInputStreamReader.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataModel.dat" afterPath="$PROJECT_DIR$/DataModel.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame.class" afterPath="$PROJECT_DIR$/out/production/INDUCTION_SW_RPI/view/UserInputFrame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/DatabasePersistor.java" afterPath="$PROJECT_DIR$/src/controller/DatabasePersistor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/InductionSWController.java" afterPath="$PROJECT_DIR$/src/controller/InductionSWController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/MyInputStreamReader.java" afterPath="$PROJECT_DIR$/src/controller/MyInputStreamReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/VideoPlayer.java" afterPath="$PROJECT_DIR$/src/controller/VideoPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/interfaces/IGui.java" afterPath="$PROJECT_DIR$/src/controller/interfaces/IGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Questionnaire.java" afterPath="$PROJECT_DIR$/src/model/Questionnaire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/ImagePanel.java" afterPath="$PROJECT_DIR$/src/view/ImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/MainApplication.java" afterPath="$PROJECT_DIR$/src/view/MainApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/MainDashBoardFrame.java" afterPath="$PROJECT_DIR$/src/view/MainDashBoardFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/QuestionPanel.java" afterPath="$PROJECT_DIR$/src/view/QuestionPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/QuizFrame.java" afterPath="$PROJECT_DIR$/src/view/QuizFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/UserInputFrame.java" afterPath="$PROJECT_DIR$/src/view/UserInputFrame.java" />
     </list>
     <ignored path="INDUCTION_SW_RPI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="VideoPlayer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VideoPlayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/VideoPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="264">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,20 +45,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewInducteesFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ViewInducteesFrame.java">
+      <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/ImagePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="156" column="64" selection-start-line="156" selection-start-column="64" selection-end-line="156" selection-end-column="64" />
+            <state relative-caret-position="88">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInputFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageChoiceQuestion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ImageChoiceQuestion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-972">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Questionnaire.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Questionnaire.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewInducteesFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/ViewInducteesFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3168">
+              <caret line="156" column="64" selection-start-line="156" selection-start-column="64" selection-end-line="156" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3276#3277#0" expanded="false" />
+                <element signature="e#3317#3318#0" expanded="false" />
+                <element signature="e#5770#5771#0" expanded="false" />
+                <element signature="e#5822#5823#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInputFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/UserInputFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1980">
+            <state relative-caret-position="22">
               <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
               <folding />
             </state>
@@ -133,10 +130,10 @@
         <option value="$PROJECT_DIR$/src/controller/InductionSWController.java" />
         <option value="$PROJECT_DIR$/src/controller/MyInputStreamReader.java" />
         <option value="$PROJECT_DIR$/src/view/QuizFrame.java" />
-        <option value="$PROJECT_DIR$/src/controller/VideoPlayer.java" />
         <option value="$PROJECT_DIR$/src/view/ViewInducteesFrame.java" />
         <option value="$PROJECT_DIR$/src/view/BackEndFrame.java" />
         <option value="$PROJECT_DIR$/src/view/UserInputFrame.java" />
+        <option value="$PROJECT_DIR$/src/controller/VideoPlayer.java" />
       </list>
     </option>
   </component>
@@ -171,7 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +218,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="INDUCTION_SW_RPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="INDUCTION_SW_RPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,7 +258,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -542,6 +557,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c5f43920-93a3-445a-945d-725c9589bd9c" name="Default" comment="" />
@@ -561,15 +579,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918397" sideWeight="0.50578034" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918397" sideWeight="0.5086705" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.49710983" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.49421966" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.49421966" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.4913295" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -581,6 +599,14 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972338" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -596,6 +622,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/controller/VideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ViewInducteesFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3168">
+          <caret line="156" column="64" selection-start-line="156" selection-start-column="64" selection-end-line="156" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3276#3277#0" expanded="false" />
+            <element signature="e#3317#3318#0" expanded="false" />
+            <element signature="e#5770#5771#0" expanded="false" />
+            <element signature="e#5822#5823#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/UserInputFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/VideoPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -618,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -651,14 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Questionnaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/InductionSWController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -666,14 +715,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MyInputStreamReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,37 +726,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/VideoPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/view/ViewInducteesFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state relative-caret-position="3168">
+          <caret line="156" column="64" selection-start-line="156" selection-start-column="64" selection-end-line="156" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3276#3277#0" expanded="false" />
+            <element signature="e#3317#3318#0" expanded="false" />
+            <element signature="e#5770#5771#0" expanded="false" />
+            <element signature="e#5822#5823#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ViewInducteesFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="156" column="64" selection-start-line="156" selection-start-column="64" selection-end-line="156" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/BackEndFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2540">
-          <caret line="69" column="62" selection-start-line="69" selection-start-column="62" selection-end-line="69" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/BackEndFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/view/UserInputFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1980">
+        <state relative-caret-position="22">
           <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MyInputStreamReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ImageChoiceQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Questionnaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/VideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

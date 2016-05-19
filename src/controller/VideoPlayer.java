@@ -9,6 +9,8 @@ public class VideoPlayer {
 
     public VideoPlayer() {
         runCommand("omxplayer -r -o hdmi InductionVideo.mp4");
+
+        //
         QuizFrame qf = new QuizFrame("Induction Assessment");
         qf.setSize(640,480);
         qf.setExtendedState(JFrame.MAXIMIZED_BOTH); // Fullscreen
