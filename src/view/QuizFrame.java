@@ -4,6 +4,7 @@ package view;
 import controller.InductionSWController;
 import model.MultipleChoiceQuestion;
 import model.Questionnaire;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -60,7 +61,7 @@ public class QuizFrame extends JFrame {
 
     private JPanel createCenterPanel() {
 
-        JPanel mainPanel = new JPanel(new GridLayout(0, 1));
+        JPanel mainPanel = new JPanel(new MigLayout());
 
         for (MultipleChoiceQuestion quest : questionnaire.getQuestions()) {
 
@@ -69,11 +70,11 @@ public class QuizFrame extends JFrame {
         } // end for
 
         /* Must get used to this foreach syntax. */
-        questionPanels.forEach(mainPanel::add);
+//        questionPanels.forEach(mainPanel::add);
 
-//        for (QuestionPanel p : questionPanels) {
-//            mainPanel.add(p);
-//        }
+        for (QuestionPanel p : questionPanels) {
+            mainPanel.add(p, "wrap");
+        }
 
 
         return mainPanel;

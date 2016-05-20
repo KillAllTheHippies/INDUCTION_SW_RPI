@@ -14,9 +14,11 @@ public class Questionnaire {
 
     private ArrayList<MultipleChoiceQuestion> questions;
     private boolean[] answers;
+    private MultipleChoiceQuestion question;
 
     public Questionnaire() {
         this.questions = new ArrayList<>();
+
 
         // initialise the answers array (to the size of the amount of questions)
         try{
@@ -27,11 +29,15 @@ public class Questionnaire {
             while((s = in.readLine()) != null){
 
                 String[] var = s.split("="); // use = as our delimiter
-                MultipleChoiceQuestion question = new MultipleChoiceQuestion(var[0]);
-                question.addChoice(var[1], true);
-                question.addChoice(var[2], false);
-                question.addChoice(var[3], false);
-                question.addChoice(var[4], false);
+
+
+                    question = new MultipleChoiceQuestion(var[0]);
+                    question.addChoice(var[1], true);
+                    question.addChoice(var[2], false);
+                    question.addChoice(var[3], false);
+                    question.addChoice(var[4], false);
+
+
 
                 /* Shuffle the choices */
                 ArrayList<QChoice> tempChoices = question.getChoices();

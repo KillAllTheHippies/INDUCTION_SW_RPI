@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
  */
 
-public class ImageChoiceQuestion implements Serializable
+public class ImageChoiceQuestion extends MultipleChoiceQuestion implements Serializable
 
 {
 
@@ -35,22 +35,22 @@ public class ImageChoiceQuestion implements Serializable
 
     }
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
-        out.defaultWriteObject();
-        out.writeInt(choices.size()); // how many images are serialized?
-        for (BufferedImage eachImage : choices) {
-            ImageIO.write(eachImage, "png", out); // png is lossless
-        }
-    }
-
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        in.defaultReadObject();
-        final int imageCount = in.readInt();
-        choices = new ArrayList<BufferedImage>(imageCount);
-        for (int i=0; i<imageCount; i++) {
-            choices.add(ImageIO.read(in));
-        }
-    }
+//    private void writeObject(ObjectOutputStream out) throws IOException {
+//        out.defaultWriteObject();
+//        out.writeInt(choices.size()); // how many images are serialized?
+//        for (BufferedImage eachImage : choices) {
+//            ImageIO.write(eachImage, "png", out); // png is lossless
+//        }
+//    }
+//
+//    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+//        in.defaultReadObject();
+//        final int imageCount = in.readInt();
+//        choices = new ArrayList<BufferedImage>(imageCount);
+//        for (int i=0; i<imageCount; i++) {
+//            choices.add(ImageIO.read(in));
+//        }
+//    }
 
     /**
 
@@ -62,11 +62,11 @@ public class ImageChoiceQuestion implements Serializable
 
      */
 
-    public void addChoice(BufferedImage choice, boolean correct)
+    public void addImageChoice(String choice, boolean correct)
 
     {
 
-        choices.add(choice);
+//        choices.add(choice);
 
         if (correct)
 
@@ -82,29 +82,10 @@ public class ImageChoiceQuestion implements Serializable
 
     }
 
-//    public void display()
-//
-//    {
-//
-//// Display the question text
-//
-//        super.display();
-//
-//// Display the answer choices
-//
-//        for (int i = 0; i < choices.size(); i++)
-//
-//        {
-//
-//            int choiceNumber = i + 1;
-//
-//            System.out.println(choiceNumber + ": " + choices.get(i));
-//
-//        }
-//
-//    }
 
-    public ArrayList<BufferedImage> getChoices() {
+
+
+    public ArrayList<BufferedImage> getImageChoices() {
         return choices;
     }
 
