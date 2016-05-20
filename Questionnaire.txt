@@ -2,3 +2,4 @@ This is a question.=True answer 1=False answer 2=False answer 3=False answer 4
 This is a question....=True answer 1=False answer 2=False answer 3=False answer 4
 This is a question...=True answer 1=False answer 2=False answer 3=False answer 4
 This is a question......=True answer 1=False answer 2=False answer 3=False answer 4
+This is an ImageQuestion.='C:\images\1.png'='C:\images\2.png'='C:\images\3.png'='C:\images\4.png'

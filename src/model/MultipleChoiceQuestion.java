@@ -1,5 +1,9 @@
 package model;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -82,43 +86,27 @@ public class MultipleChoiceQuestion  implements Serializable
     public void addChoice(String choice, boolean correct)
 
     {
-        QChoice c = new QChoice(choice, correct);
-        choices.add(c);
+        // test for a file path
+        if (choice.substring(0, 1).equals("'") ) {
+            choice = choice.substring(1, choice.length() - 1);
+            BufferedImage img = null;
+            try {
+                img = ImageIO.read(new File(choice)); //
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            QChoice c = new QChoice(img, correct);
+            choices.add(c);
+        } else {
+            QChoice c = new QChoice(choice, correct);
+            choices.add(c);
+        }
 
-//        if (correct)
-//
-//        {
-//
-//            // Convert choices.size() to string
-//
-//            String choiceString = "" + choices.size();
-//
-//            setAnswer(choiceString);
-//
-//        }
+
+
 
     }
 
-//    public void display()
-//
-//    {
-//
-//// Display the question text
-//
-//        super.display();
-//
-//// Display the answer choices
-//
-//        for (int i = 0; i < choices.size(); i++)
-//
-//        {
-//
-//            int choiceNumber = i + 1;
-//
-//            System.out.println(choiceNumber + ": " + choices.get(i));
-//
-//        }
-//
-//    }
+
 
 }

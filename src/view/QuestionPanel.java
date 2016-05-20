@@ -3,6 +3,7 @@ package view;
 import controller.InductionSWController;
 import model.Inductee;
 import model.MultipleChoiceQuestion;
+import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
 import java.awt.*;
@@ -33,7 +34,7 @@ public class QuestionPanel extends JPanel {
         this.currentInductee = InductionSWController.getInstance().getCurrentInductee();
 //        this.dataModel = InductionSWController.getInstance().getDataModel();
 //        this.setLayout(new FlowLayout(FlowLayout.LEFT));
-        this.setLayout(new GridLayout(0,1));
+        this.setLayout(new MigLayout());
         btn1 = new JRadioButton();
         btn2 = new JRadioButton();
         btn3 = new JRadioButton();
@@ -63,19 +64,40 @@ public class QuestionPanel extends JPanel {
         JLabel lblQuestion = new JLabel(q.getText());
         Font labelFont = lblQuestion.getFont();
         lblQuestion.setFont(new Font(labelFont.getName(), Font.PLAIN, 15));
-        this.add(lblQuestionNum);
-        this.add(lblQuestion);
+        this.add(lblQuestionNum, "wrap");
+        this.add(lblQuestion, "wrap");
 
 
         // Create the radiobuttons
         for (int i =0; i < q.getChoices().size(); i++) {
 
-            String s = q.getChoices().get(i).getText();
-            JRadioButton btn = btnArray.get(i);
-            btn.setText(s);
-            btn.setFont(new Font(labelFont.getName(), Font.PLAIN, 15));
-            btnGroup.add(btn);
-            this.add(btn);
+            if (q.getChoices().get(i).getImage() == null) { // If no image
+
+                String s = q.getChoices().get(i).getText();
+                JRadioButton btn = btnArray.get(i);
+                btn.setText(s);
+                btn.setFont(new Font(labelFont.getName(), Font.PLAIN, 15));
+                btnGroup.add(btn);
+                this.add(btn, "wrap");
+            } else {
+                JPanel outerPanel = new JPanel();
+                outerPanel.setLayout(new MigLayout("wrap 1"));
+                outerPanel.setBorder(BorderFactory.createEtchedBorder());
+//                outerPanel.setBackground(Color.white);
+                ImagePanel ip = new ImagePanel(q.getChoices().get(i).getImage());
+
+//                ip.setPreferredSize(new Dimension(q.getChoices().get(i).getImage().getWidth(),q.getChoices().get(i).getImage().getHeight()));
+                ip.setPreferredSize(new Dimension(300,300));
+                outerPanel.add(ip);
+
+                JRadioButton btn = btnArray.get(i);
+                btnGroup.add(btn);
+//                btn.setHorizontalTextPosition(SwingConstants.LEFT);
+                btn.setText("Text can go here...");
+                outerPanel.add(btn, "gapbefore " + ( (ip.getPreferredSize().getWidth() / 2) ) );
+                this.add(outerPanel);
+            }
+
         }
 
         // Add a border to the panel (padding)
