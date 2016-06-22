@@ -4,6 +4,7 @@ import model.DataModel;
 import model.Inductee;
 
 import javax.swing.table.DefaultTableModel;
+import java.util.ArrayList;
 
 
 public class InducteesTableModel extends DefaultTableModel
@@ -18,9 +19,9 @@ public class InducteesTableModel extends DefaultTableModel
     private static final int CAR_REG_COL = 4;
     private static final int COMPETENCIES_COL = 5;
 
-    private DataModel dataModel;
+    private ArrayList<Inductee> dataModel;
 
-    public InducteesTableModel(DataModel dataModel)
+    public InducteesTableModel(ArrayList<Inductee> dataModel)
     {
         super();
         this.dataModel = dataModel;
@@ -65,7 +66,7 @@ public class InducteesTableModel extends DefaultTableModel
     {
         if(this.dataModel != null)
         {
-            return this.dataModel.getInductees().size();
+            return this.dataModel.size();
         }
         else
         {
@@ -80,7 +81,7 @@ public class InducteesTableModel extends DefaultTableModel
     {
         //Get the Player from the "raw data" ArrayList at
         //index row
-        Inductee currentInductee = this.dataModel.getInductees().get(row);
+        Inductee currentInductee = this.dataModel.get(row);
         if(col == NAME_COL)
         {
             return currentInductee.getName();

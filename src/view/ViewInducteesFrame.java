@@ -64,7 +64,7 @@ public class ViewInducteesFrame extends JFrame implements IGui
         //controller here to get us the list of players which
         //it manages as data model objects
         tableModel =
-                new InducteesTableModel(InductionSWController.getInstance().getDataModel());
+                new InducteesTableModel(InductionSWController.getInstance().getPersistor().read());
 
         inducteesTable.setModel(tableModel);
 
@@ -185,7 +185,7 @@ public class ViewInducteesFrame extends JFrame implements IGui
                                     "You need to select a row in the table",
                                     "Error", JOptionPane.ERROR_MESSAGE);
                 } else {
-                    Inductee i = InductionSWController.getInstance().getDataModel().getInductee(inducteesTable.getSelectedRow());
+                    Inductee i = InductionSWController.getInstance().getPersistor().read().get(inducteesTable.getSelectedRow());
 
                     final JDialog frame = new JDialog(outerClass, i.getName(), true);
 
@@ -236,12 +236,17 @@ public class ViewInducteesFrame extends JFrame implements IGui
                 }
                 else
                 {
-                    if (InductionSWController.getInstance().getDataModel().getInductees().get
-                            (inducteesTable.getSelectedRow()).getPhoto() != null) {
+
+                    Inductee ind = InductionSWController.getInstance().getPersistor().read().get
+                            (inducteesTable.getSelectedRow());
+
+                    BufferedImage bi = ind.getPhoto();
+
+                    if (bi != null) {
                         showImage(
-                                InductionSWController.getInstance().getDataModel().getInductees().get
+                                InductionSWController.getInstance().getDataModel().get
                                         (inducteesTable.getSelectedRow()).getPhoto(),
-                                InductionSWController.getInstance().getDataModel().getInductees().get
+                                InductionSWController.getInstance().getDataModel().get
                                         (inducteesTable.getSelectedRow()).getName()
                                 );
                     } else {
@@ -272,11 +277,16 @@ public class ViewInducteesFrame extends JFrame implements IGui
                             JOptionPane.showConfirmDialog(outerClass, message);
                     if(answer == JOptionPane.YES_OPTION)
                     {
-                        ArrayList<Inductee> inductees = InductionSWController.getInstance().getDataModel().getInductees();
-                        inductees.remove(inducteesTable.getSelectedRow());
-                        InductionSWController.getInstance().getDataModel().setInductees(inductees);
-                        InductionSWController.getInstance().save();
-                        refreshGUI();
+                        //TODO: Delete the Inductee file
+                        JOptionPane.showMessageDialog
+                                (outerClass,
+                                        "Feature added soon",
+                                        "Sorry!", JOptionPane.INFORMATION_MESSAGE);
+//                        ArrayList<Inductee> inductees = InductionSWController.getInstance().getDataModel().getInductees();
+//                        inductees.remove(inducteesTable.getSelectedRow());
+//                        InductionSWController.getInstance().getDataModel().setInductees(inductees);
+//                        InductionSWController.getInstance().save();
+//                        refreshGUI();
                     }
                     else if (answer == JOptionPane.NO_OPTION)
                     {

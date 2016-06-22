@@ -13,7 +13,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
 
-
+/**
+ * TODO: Create a roster.
+ * TODO: Change flow
+ * TODO: SAVE INDUCTEES INDIVIDUALLY
+ */
 public class InductionSWController
 {
     //THIS IS THE STATIC PART
@@ -39,7 +43,7 @@ public class InductionSWController
     /////EVERYTHING BELOW THIS IS THE "INSTANCE PART"
 
     //Reference to the data model
-    private DataModel dataModel;
+    private ArrayList<Inductee> dataModel;
     private Questionnaire questionnaire;
     private Inductee currentInductee;
     public static final int QUIZ_PASS_PERCENTAGE = 70;
@@ -72,12 +76,9 @@ public class InductionSWController
         this.questionnaire = new Questionnaire();
     }
 
-    public void setDataModel(DataModel dataModel)
-    {
-        this.dataModel = dataModel;
-    }
+    
 
-    public DataModel getDataModel()
+    public ArrayList<Inductee> getDataModel()
     {
         return this.dataModel;
     }
@@ -115,14 +116,7 @@ public class InductionSWController
         return i;
     }
 
-    public void saveCurrentInductee() {
 
-        if (currentInductee != null) {
-            this.dataModel.addInductee(currentInductee);
-        } else {
-            System.out.println("CURRENTINDUCTEE IS NULL");
-        }
-    }
     public Inductee getCurrentInductee() {
         return currentInductee;
     }
@@ -168,7 +162,8 @@ public class InductionSWController
     // Write the newly added inductees and clear the arraylist
     public void save()
     {
-        this.persistor.write(this.dataModel);
+        this.persistor.writeInductee(getCurrentInductee());
+        //this.persistor.write(this.dataModel);
         System.out.println("save method of controller called");
 
     }

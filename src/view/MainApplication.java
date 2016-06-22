@@ -20,10 +20,11 @@ public class MainApplication {
         InductionSWController.getInstance().setPersistor(persistor);
 
         // Create the model and instantiate the data in it from the persistor
-        DataModel dataModel = persistor.read();
+        // NO LONGER REQUIRED
+//        DataModel dataModel = persistor.read();
 
         // Connect the controller to the model
-        InductionSWController.getInstance().setDataModel(dataModel);
+//        InductionSWController.getInstance().setDataModel(dataModel);
 
         // Create an instance of our main application frame which builds the UI
 //        UserInputFrame uif = new UserInputFrame("Induction Application");
