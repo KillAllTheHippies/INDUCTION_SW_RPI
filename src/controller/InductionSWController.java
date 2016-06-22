@@ -76,7 +76,7 @@ public class InductionSWController
         this.questionnaire = new Questionnaire();
     }
 
-    
+
 
     public ArrayList<Inductee> getDataModel()
     {
@@ -205,7 +205,7 @@ public class InductionSWController
 
 
     public void launchVideo() {
-        //TODO: Launch omxplayer
+
         VideoPlayer vp = new VideoPlayer();
 
     }

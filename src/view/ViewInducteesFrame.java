@@ -9,6 +9,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
+import java.io.File;
+import java.nio.file.Files;
 import java.util.ArrayList;
 
 
@@ -53,6 +55,9 @@ public class ViewInducteesFrame extends JFrame implements IGui
     {
         //This "wakes up" the table model and tells it
         //that the data model it is connected to has changed.
+        this.tableModel =
+                new InducteesTableModel(InductionSWController.getInstance().getPersistor().read());
+        inducteesTable.setModel(tableModel);
         this.tableModel.fireTableDataChanged();
     }
 
@@ -275,12 +280,19 @@ public class ViewInducteesFrame extends JFrame implements IGui
                             JOptionPane.showConfirmDialog(outerClass, message);
                     if(answer == JOptionPane.YES_OPTION)
                     {
-                        //TODO: Delete the Inductee file
-                        JOptionPane.showMessageDialog
-                                (outerClass,
-                                        "Feature added soon",
-                                        "Sorry!", JOptionPane.INFORMATION_MESSAGE);
-                        InductionSWController.getInstance().getPersistor().read().get(inducteesTable.getSelectedRow());
+                        String fileName = InductionSWController.getInstance().getPersistor().read().get(inducteesTable.getSelectedRow()).getUUID();
+                        boolean success = (new File
+                                ("Inductees/" + fileName)).delete();
+                        if (success) {
+                            System.out.println("The file has been successfully deleted");
+                            JOptionPane.showMessageDialog
+                                    (outerClass,
+                                            "File deleted",
+                                            "Success!", JOptionPane.INFORMATION_MESSAGE);
+
+                            InductionSWController.getInstance().setGuiReference(outerClass);
+                            InductionSWController.getInstance().getGuiReference().refreshGUI();
+                        }
 
 //                        ArrayList<Inductee> inductees = InductionSWController.getInstance().getDataModel().getInductees();
 //                        inductees.remove(inducteesTable.getSelectedRow());
