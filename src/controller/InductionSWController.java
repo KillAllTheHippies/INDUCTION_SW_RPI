@@ -172,7 +172,8 @@ public class InductionSWController
     // Write the newly added inductees and clear the arraylist
     public void save()
     {
-        this.persistor.write(this.dataModel);
+        this.persistor.writeInductee(getCurrentInductee());
+        //this.persistor.write(this.dataModel);
         System.out.println("save method of controller called");
 
     }

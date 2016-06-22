@@ -1,6 +1,7 @@
 package controller.interfaces;
 
 import model.DataModel;
+import model.Inductee;
 
 /**
  * Created by Jamie on 29/02/16.
@@ -11,5 +12,7 @@ public interface IPersistor {
     DataModel read();
 
     void write(DataModel dm);
+
+    void writeInductee(Inductee i);
 
 }

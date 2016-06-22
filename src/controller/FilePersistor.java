@@ -6,16 +6,37 @@ package controller;
 
 import controller.interfaces.IPersistor;
 import model.DataModel;
+import model.Inductee;
 
 import java.io.*;
+import java.util.UUID;
 
 
 public class FilePersistor implements IPersistor{
 
     private static final String FILE_LOCATION = "C:\\InductionApp\\DataModel.dat";
 
+//    public void write(DataModel dm)
+//    {
+//        try
+//        {
+//            FileOutputStream fos = new FileOutputStream(InductionSWController.DATAMODEL_FILE_LOCATION);
+//            ObjectOutputStream oos = new ObjectOutputStream(fos);
+//            oos.writeObject(dm);
+//            oos.close();
+//            fos.close();
+//            System.out.println("Datamodel written");
+//        }
+//        catch(IOException ioex)
+//        {
+//            System.out.println(ioex.getMessage());
+//        }
+//
+//    }
     public void write(DataModel dm)
     {
+
+
         try
         {
             FileOutputStream fos = new FileOutputStream(InductionSWController.DATAMODEL_FILE_LOCATION);
@@ -33,10 +54,23 @@ public class FilePersistor implements IPersistor{
     }
 
 
-//    public void writeInductee(Inductee i, DataModel dm) {
-//        dm.addInductee(i);
-//        write(dm);
-//    }
+    public void writeInductee(Inductee i) {
+        String randomFileName = UUID.randomUUID().toString() + ".ind";
+        try
+        {
+            File f = new File("Inductees\\" + randomFileName);
+            FileOutputStream fos = new FileOutputStream(f);
+            ObjectOutputStream oos = new ObjectOutputStream(fos);
+            oos.writeObject(i);
+            oos.close();
+            fos.close();
+            System.out.println("Inductee written");
+        }
+        catch(IOException ioex)
+        {
+            System.out.println(ioex.getMessage());
+        }
+    }
 
     public DataModel read() {
 
