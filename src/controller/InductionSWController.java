@@ -13,7 +13,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
 
-
+/**
+ * TODO: Create a roster.
+ * TODO: Change flow
+ * TODO: SAVE INDUCTEES INDIVIDUALLY
+ */
 public class InductionSWController
 {
     //THIS IS THE STATIC PART
