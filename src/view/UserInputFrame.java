@@ -88,7 +88,7 @@ public class UserInputFrame extends JFrame {
                 InductionSWController.getInstance().createInductee(tfName.getText(), tfCompany.getText(),
                         tfJobTitle.getText(), tfSupervisor.getText(), tfCarReg.getText(),
                         tfCompetencies.getText(), System.currentTimeMillis());
-                System.out.println("user added");
+
                 // ADD THE PHOTO
                 try {
                     InductionSWController.getInstance().getCurrentInductee().setPhoto(InductionSWController.getInstance().takePicture()

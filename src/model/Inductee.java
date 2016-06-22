@@ -18,6 +18,7 @@ public class Inductee implements Serializable {
 
         private String name, company, jobTitle, supervisor, carReg;
         private String competencies;
+        private String UUID;
         private long dateOfInduction;
         transient BufferedImage photo;
         private int[] quizAnswers;
@@ -107,6 +108,15 @@ public class Inductee implements Serializable {
     /* *************<- GETTERS AND SETTERS ->************
     * ***************************************************
     * ***************************************************/
+
+
+    public String getUUID() {
+        return UUID;
+    }
+
+    public void setUUID(String UUID) {
+        this.UUID = UUID;
+    }
 
     public ArrayList<String> getWrongAnswers() {
         return wrongAnswers;

@@ -237,12 +237,10 @@ public class ViewInducteesFrame extends JFrame implements IGui
                 else
                 {
 
-                    Inductee ind = InductionSWController.getInstance().getPersistor().read().get
-                            (inducteesTable.getSelectedRow());
 
-                    BufferedImage bi = ind.getPhoto();
 
-                    if (bi != null) {
+                    if (InductionSWController.getInstance().getPersistor().read().get
+                            (inducteesTable.getSelectedRow()).getPhoto() != null) {
                         showImage(
                                 InductionSWController.getInstance().getDataModel().get
                                         (inducteesTable.getSelectedRow()).getPhoto(),
@@ -282,6 +280,8 @@ public class ViewInducteesFrame extends JFrame implements IGui
                                 (outerClass,
                                         "Feature added soon",
                                         "Sorry!", JOptionPane.INFORMATION_MESSAGE);
+                        InductionSWController.getInstance().getPersistor().read().get(inducteesTable.getSelectedRow());
+
 //                        ArrayList<Inductee> inductees = InductionSWController.getInstance().getDataModel().getInductees();
 //                        inductees.remove(inducteesTable.getSelectedRow());
 //                        InductionSWController.getInstance().getDataModel().setInductees(inductees);
