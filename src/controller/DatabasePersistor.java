@@ -59,11 +59,11 @@ public class DatabasePersistor implements IPersistor {
     }
 
     @Override
-    public DataModel read() {
+    public ArrayList<Inductee> read() {
 
         //Create an empty list
         //ArrayList<Inductee> inducteesList = new ArrayList<Inductee>();
-        DataModel dataModel = new DataModel();
+        ArrayList<Inductee> dataModel = new ArrayList<Inductee>();
         // Test code
 //        Inductee i = new Inductee("Feidhlim", "Jamie", "Dorkheads Inc", "Dogsbody", "being a dork", System.currentTimeMillis());
 //        inducteesList.add(i);

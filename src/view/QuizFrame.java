@@ -186,7 +186,7 @@ public class QuizFrame extends JFrame {
                             public void actionPerformed(ActionEvent e) {
                                 // persist the Inductee
                                 if (InductionSWController.getInstance().getCurrentInductee() != null) {
-                                    InductionSWController.getInstance().saveCurrentInductee();
+//
                                     // Write the datamodel
                                     InductionSWController.getInstance().save();
                                 } else {

@@ -185,6 +185,8 @@ public class Inductee implements Serializable {
     }
 
     public BufferedImage getPhoto() {
+        // null check
+
         return photo;
     }
 
