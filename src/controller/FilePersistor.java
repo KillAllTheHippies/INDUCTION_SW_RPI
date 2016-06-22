@@ -15,7 +15,7 @@ import java.util.UUID;
 
 public class FilePersistor implements IPersistor{
 
-    private static final String FILE_LOCATION = "C:\\InductionApp\\DataModel.dat";
+//    private static final String FILE_LOCATION = "C:\\InductionApp\\DataModel.dat";
 
 //    public void write(DataModel dm)
 //    {
@@ -56,12 +56,16 @@ public class FilePersistor implements IPersistor{
 
 
     public void writeInductee(Inductee i) {
-        String randomFileName = UUID.randomUUID().toString() + ".ind";
+        String randomFileName = UUID.randomUUID().toString();
+
         try
         {
-            File f = new File("Inductees\\" + randomFileName);
+            File f = new File("Inductees/" + randomFileName);
             FileOutputStream fos = new FileOutputStream(f);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
+            // Add the random UUID to the Inductee
+            //(This is also the file name)
+            i.setUUID(f.getName());
             oos.writeObject(i);
             oos.close();
             fos.close();
@@ -91,10 +95,11 @@ public class FilePersistor implements IPersistor{
                 try {
                     FileInputStream fis = new FileInputStream(fileEntry.getPath());
                     ObjectInputStream ois = new ObjectInputStream(fis);
-                    //We know that a DataModel object was serialized INTO
-                    //the file, therefore a DataModel object MUST be coming
-                    //out of the file => We can cast it to a DataModel object.
+                    //We know that a Inductee object was serialized INTO
+                    //the file, therefore a Inductee object MUST be coming
+                    //out of the file => We can cast it to a Inductee object.
                     Inductee serializedObject = (Inductee) ois.readObject();
+
                     ois.close();
                     fis.close();
                     // add the inductee to the arraylist
